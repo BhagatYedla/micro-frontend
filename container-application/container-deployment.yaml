@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: container-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: container-app
+  template:
+    metadata:
+      labels:
+        app: container-app
+    spec:
+      containers:
+        - name: container-app
+          image: bhagat93/container-app:v1
+          ports:
+            - containerPort: 8083

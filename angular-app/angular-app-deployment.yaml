@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: angular-app
+  template:
+    metadata:
+      labels:
+        app: angular-app
+    spec:
+      containers:
+        - name: angular-app
+          image: bhagat93/angular-app:v1
+          ports:
+            - containerPort: 8082
