@@ -7,4 +7,4 @@ The project is deployed on the microsoft azure and it is done with the CI/CD pip
 
 For each and every module I have included the file deployment and service which is used for the deployment in micorosoft azure.
 
-
+The modules also contain the docker file by which you can push the code to the docker hub.
