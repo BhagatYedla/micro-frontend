@@ -10,7 +10,7 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "package":"cd dist/static/js && cat manifest.2ae2e69a05c33dfc65f8.js vendor.bd763a22993d15e326ec.js app.5c1e87cbbde8a080d962.js > bundle.js",
+    "package":"cd dist/static/js && cat manifest.*.js vendor.*.js app.*.js > bundle.js",
     "prod":"cd prod && cp index.html ../dist/",
     "build": "node build/build.js"
   },
