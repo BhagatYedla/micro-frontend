@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.vue src test/unit",
     "package":"cd dist/static/js && cat manifest.*.js vendor.*.js app.*.js > bundle.js",
     "prod":"cd prod && cp index.html ../dist/",
-    "build": "node build/build.js"
+    "build": "node build/build.js && npm run package"
   },
   "dependencies": {
     "vue": "^2.5.2",
